@@ -16,7 +16,7 @@ function App() {
               />
               <button 
                 type="submit"
-                className="bg-red-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition duration-200 w-full sm:w-auto"
+                className="bg-indigo-700 hover:bg-indigo-800 cursor-pointer text-white px-4 py-2 rounded transition duration-200 w-full sm:w-auto"
               >
                 Add Todo
               </button>
@@ -24,11 +24,11 @@ function App() {
           </div>
           <hr className='mt-8 mb-5'/>
           <ul>
-            <li className='bg-[#8fb996] mb-2 p-2 rounded flex justify-between'>
+            <li className='bg-gray-300 mb-2 p-2 rounded flex justify-between'>
               <div className='pt-1'>Hello</div>
               <div>
                 <button 
-                  className='bg-[#1b4332] mx-2 p-2 rounded text-green-600 hover:text-green-700 cursor-pointer'
+                  className='bg-gray-800 hover:bg-gray-700 mx-2 p-2 rounded text-white cursor-pointer'
                   title='Edit'
                 >
                   <svg 
@@ -47,7 +47,7 @@ function App() {
                   </svg>
                 </button>
                 <button 
-                  className='bg-[#1b4332] p-2 rounded text-red-600 hover:text-red-700 cursor-pointer'
+                  className='bg-gray-800 hover:bg-gray-700 p-2 rounded text-red-600 cursor-pointer'
                   title='Delete'
                 >
                   <svg 
