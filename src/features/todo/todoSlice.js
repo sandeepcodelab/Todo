@@ -21,7 +21,6 @@ const todoSclice = createSlice({
 
         },
         updateTodo(state, action){
-            console.log(action)
             const update = state.todos.find((todo) => todo.id === action.payload.id)
             if(update){
                 update.text = action.payload.text
@@ -29,6 +28,11 @@ const todoSclice = createSlice({
             }
         },
         removeTodo(state, action){
+            if(state.todoEdit !== null){
+                if(state.todoEdit.id === action.payload){
+                    state.todoEdit = null
+                }
+            }
             state.todos = state.todos.filter((todo) => todo.id !== action.payload)
         }
 

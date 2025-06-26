@@ -24,7 +24,7 @@ function TodoForm() {
         todoText.trim()
         
         if (editTodo !== null && editTodo !== undefined) {
-            dispatch(updateTodo(todoText))
+            dispatch(updateTodo({id:editTodo.id, text:todoText}))
         }
         else{
             dispatch(addTodo(todoText))
